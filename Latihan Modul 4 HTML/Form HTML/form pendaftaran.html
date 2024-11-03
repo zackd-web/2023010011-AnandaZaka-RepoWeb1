@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Form Pendaftaran</title>
+    <title>Praktikum 5</title>
 </head>
 <body>
 	<h1>Form Pendaftaran</h1>
-	<form>
-		<div class="Nama">
-			<label for="Nama">Nama: </label>
-			<input type="text" name="Nama"></form>
-		</div>
-
-		<div class="Gender">
-			<label for="gender">Jenis Kelamin:</label>
-			<input type="radio" name="gender" value="Pria" required>
-			<label for="pria">Pria</label>
-			<input type="radio" name="gender" value="Wanita" required>
-			<label for="wanita">Wanita</label>
-		</div>
-
-		<label for="alamat">Alamat</label>
-		<textarea name="alamat" rows="4"></textarea>
-
-		<div class="Prodi">
-			<label for="prodi">Program Studi</label>
-				<select>
-					<option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
-					<option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
-					<option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
-				</select>
-		</div>
-
-		<div class="No hp">
-			<label for="nomor">Nomor HP: </label>
-			<input type="text" name="Nomor HP"></form>
-		</div>
-
-		<input type="submit" name="proses">
-	</form>
+        <fieldset>
+        <legend>Registrasi</legend>
+        <p>
+            <label>Nama:</label>
+            <input type="text" name="nama" placeholder="Nama lengkap..." />
+        </p>
+        <p>
+            <label>Foto:</label>
+            <input type="file" name="foto" placeholder="Username..." />
+        </p>
+        <p>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Your email..." />
+        </p>
+        <p>
+            <label>Tanggal Lahir:</label>
+            <input type="date" name="date" placeholder="Tanggal Lahir..." />
+        </p>
+        <p>
+            <label>Jenis kelamin:</label>
+            <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </p>
+        <p>
+            <label>Negara:</label>
+            <select name="agama">
+                <option value="Indonesia">Indonesia</option>
+                <option value="Jepang">Jepang</option>
+                <option value="Korea">Korea</option>
+                <option value="Malaysia">Malaysia</option>
+            </select>
+        </p>
+        <p>
+            <label>Alamat:</label>
+            <textarea name="address"></textarea>
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Submit" />
+        </p>
+        </fieldset>
 </body>
 </html>
