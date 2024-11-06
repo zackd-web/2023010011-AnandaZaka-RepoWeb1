@@ -5,8 +5,19 @@ html, body {
 
 body {
     font: 76% Arial, sans-serif;
-    text-align: center;
 }
+
+.navbar {
+        background-color: hotpink;
+        overflow: hidden;
+        font-family: fantasy;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+        border-bottom-right-radius: 200px;
+        border-bottom-left-radius: 200px;
+        }
 
 p {
     margin: 0 10px 10px;
@@ -18,67 +29,112 @@ a {
     color: #000000;
 }
 
-div#header {
-    background-color: #F3F2ED;
+header {
+    background-color: blueviolet;
+    height: 90px;
 }
 
-div#header h1 {
-    height: 80px;
-    line-height: 80px;
-    margin: 0;
-    padding-left: 10px;
+header h1, h2 {
+    font-family: monospace;
+    margin: 0px;
+    text-align: center;
+    color: white;
 }
 
-div#container {
-    text-align: left;
+header h1::first-letter, h2::first-letter{
+    font-size: 40px;
+}
+
+#container {
     width: 700px;
     margin: 0 auto;
 }
 
-div#content p {
-    line-height: 1.4;
+#content p {
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: justify;
 }
 
-div#navigation {
-    background: #F6F0E0;
+.side-content1 {
+	margin-top: 10px;
+    background: white;
+    box-shadow: -1px -0px 5px;
     float: left;
     width: 150px;
+    height: 100px;
     margin-left: -150px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
-div#navigation ul {
+.side-content2 img {
+	width: 80px;
+	text-align: center;	
+}
+
+.side-content1 p {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.side-content1 ul {
     margin: 15px 0;
     padding: 0;
     list-style-type: none;
+    text-align: center;
 }
 
-div#navigation li {
+.side-content1 li {
     margin-bottom: 5px;
+    text-align: center;
 }
 
-div#extra {
-    background: #CCC8B3;
+.side-content2 {
+    background: white;
+    box-shadow: -1px -0px 5px;
     float: left;
-    width: 150px;
-    margin-left: -700px;
+    margin-top: 10px;
+    width: 200px;
+    margin-left: -770px;
+    height: 300px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
-div#footer {
-    background: #BFBD93;
+.side-content2 p {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.side-content2 ol {
+	margin-top: 10px;
+	text-align: center;
+}
+
+#footer {
+    background: #6b6716;
     clear: left;
-    width: 100%;
+    padding: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
 }
 
-div#footer p {
+#footer p {
     margin: 0;
+    text-align: center;
     padding: 5px 10px;
+    color: white;
+    font-size: 15px;
 }
 
-div#wrapper {
+#wrapper {
     float: left;
     width: 100%;
 }
 
-div#content {
+#content {
     margin: 0 150px;
 }
