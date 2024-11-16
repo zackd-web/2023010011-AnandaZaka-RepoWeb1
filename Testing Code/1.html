@@ -4,20 +4,304 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>tes</title>
-
     <style>
-        .kotak {
-            background: black;
-            width: 100px;
-            height: 200px;
-            padding: 20px;
-            margin: 100px;
+        .header {
+            background-image: url(https://static.wikia.nocookie.net/onepiece/images/6/6b/Slide_1_preview.png/revision/latest/scale-to-width-down/860?cb=20230426053636&path-prefix=id);
+            border: 9px solid #333;
+            margin: 5px;
+            width: 730px;
+            height: 300px;
+            padding: 50px;
             color: white;
-            text-align: ;
+            text-align: center;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            justify-content: center;
+        }
+
+        .navbar {
+            background-color: #333;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;  
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            width: 820px;
+            position: relative;
+            top: 350px;
+            margin-top: 11px;
+            right: 60px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        .main {
+            background-color: white;
+            padding: 0px;
+            border: 8px solid #333; 
+            margin: 20px;
+            top: 58px;
+            width: 800px;
+            height: 1500px;
+            position: relative;
+            overflow: auto;
+            
+        }
+
+        .content-title {
+            display: none;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .straw-hats p {
+            border-bottom: 6px solid #80cbc4;
+            text-align: center;
+            font-size: 40px;
+            margin-top: 20px;
+        }
+
+        .monsters-borders-bottom {
+            border-bottom: 6px solid darkred;
+            border-top: 6px solid darkred;
+            text-align: center;
+            font-size: 30px;
+            margin: 20px;
+        }
+
+        aside {
+            background-color: #f1f8e9;
+            padding: 10px;
+            color: white;
+            width: 430px;
+            height: 266px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            margin: 10px;
+            border: 5px solid #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            float: right;
+            align-items: center;
+            position: sticky;
+            bottom: 900px;
+        }
+
+        aside h2 {
+            font-size: 20px;
+            color: #00796b;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #80cbc4;
+            padding-bottom: 5px;
+            background-color: red;
+            text-align: center;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside ul li {
+            margin-bottom: 10px;
+        }
+
+        aside ul li a {
+            color: #004d40;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s ease-in-out;
+        }
+
+        aside ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .kotak-grup {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5px;
+        }
+
+        .kotak1 {
+            width: 200px;
+            background-image: url(https://media.hitekno.com/thumbs/2022/05/31/82987-one-piece-luffy/730x480-img-82987-one-piece-luffy.jpg);
+            background-size: cover;
+            height: 200px;
+            color: black;
+            border: 3px solid black;
+        }.kotak2 {
+            width: 200px;
+            background-image: url(https://cdnwpseller.gramedia.net/wp-content/uploads/2023/02/roronoza-zoro.webp);
+            background-size: cover;
+            height: 200px;
+            color: black;
+            border: 3px solid black;
+        }.kotak3 {
+            width: 200px;
+            background-image: url(https://i0.wp.com/spellmana.com/wp-content/uploads/2024/08/red-sanji-deck-guide.webp?fit=1593%2C868&ssl=1);
+            background-size: cover;
+            height: 200px;
+            color: black;
+            border: 3px solid black;
+        }
+
+        .trio-monsters-title p {
+            margin: 0;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .trio-monsters {
+            display: flex;
+            font-size: 24px;
+            justify-content: space-around;
+            font-family: monospace;
+
+        }.another-crew-1 {
+            display: flex;
+            font-size: 24px;
+            justify-content: space-around;
+            font-family: monospace;
+
+        }.another-crew-2 {
+            display: flex;
+            font-size: 24px;
+            justify-content: space-around;
+            font-family: monospace;
+
+        }
+
+        .kotak-grup-crew, .kotak-grup-crew-2 {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5px;
+
+        }
+
+        .kotak4, .kotak5, .kotak6, .kotak7, .kotak8, .kotak9 {
+            width: 200px;
+            background-size: cover;
+            height: 200px;
+            background-position: center;
+            color: black;
+            border: 3px solid black;
+        }
+
+        .kotak4 {
+            background-image: url(https://fantech.id/wp-content/uploads/2023/11/image-35.png);
+        }
+
+        .kotak5 {
+             background-image: url(https://asset-2.tstatic.net/tribunnewswiki/foto/bank/images/Usopp-di-One-PieceUsopp-di-One-Piece.jpg);
+        }
+        .kotak6 {
+             background-image: url(https://i.pinimg.com/474x/66/5a/86/665a8611f10f29b606174ca8ea3df29d.jpg);
+        }
+        .kotak7 {
+             background-image: url(https://i.pinimg.com/736x/c5/a6/2a/c5a62a1c811bd6cac27cc17cd405337b.jpg);
+        }
+        .kotak8 {
+             background-image: url(https://www.greenscene.co.id/wp-content/uploads/2022/06/robin-onigashima.jpeg);
+        }
+        .kotak9 {
+             background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpkVE0StgeUd2TD2MEfoLjLfIFUAgJYX8y9A&s);
         }
     </style>
 </head>
 <body>
-    <div class="kotak">kotak</div>
+    <div class="header">
+        <div class="navbar">
+              <a href="#home" class="active">Home</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="straw-hats">
+            <p>STRAWHATS PIRATES</p>
+        </div>
+        
+        <div class="trio-monsters-title">
+            <p>怪物3人組</p>
+        </div>
+
+        <div class="trio-monsters">
+            <div class="1">
+                <p>モンキー・D・ルフィ</p>
+            </div>
+            <div class="1">
+                <p>ロロノア・ ゾロ</p>
+            </div>
+            <div class="1">
+                <p>ヴィンスモーク・サンジ</p>
+            </div>
+        </div>
+
+        <div class="kotak-grup">
+            <div class="kotak1"></div>
+            <div class="kotak2"></div>
+            <div class="kotak3"></div>
+        </div>
+
+        <div class="monsters-borders-bottom">
+            <div class="crew">
+                <p>STRAWHATS CREW</p>
+            </div>
+        </div>
+
+        <div class="another-crew-1">
+            <div class="2">
+                <p>ナミ</p>
+            </div>
+            <div class="2">
+                <p>ウソップ</p>
+            </div>
+            <div class="2">
+                <p>チョッパー</p>
+            </div>
+        </div>
+
+        <div class="kotak-grup-crew">
+            <div class="kotak4"></div>
+            <div class="kotak5"></div>
+            <div class="kotak6"></div>
+        </div>
+
+        <div class="another-crew-2">
+            <div class="3">
+                <p>フランキー</p>
+            </div>
+            <div class="3">
+                <p>ニコ・ロビン</p>
+            </div>
+            <div class="3">
+                <p>ブルック</p>
+            </div>
+        </div> 
+
+        <div class="kotak-grup-crew-2">
+            <div class="kotak7"></div>
+            <div class="kotak8"></div>
+            <div class="kotak9"></div>
+        </div>
+    </div>
+
+    <aside>
+        <h2>Top Articles</h2>
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JS</a></li>
+        </ul>
+    </aside>
 </body>
 </html>
