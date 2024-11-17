@@ -19,8 +19,37 @@ body {
         border-bottom-left-radius: 200px;
         }
 
-p {
-    margin: 0 10px 10px;
+.kotak-konten {
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+}
+
+.kotak1 {
+    width: 50px;
+    padding: 40px;
+    background-color: salmon;
+    left: 200px;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.kotak2 {
+    width: 50px;
+    padding: 40px;
+    background-color: hotpink;
+    left: 200px;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.kotak3 {
+    width: 50px;
+    padding: 40px;
+    background-color: blueviolet;
+    left: 200px;
+    justify-content: center;
+    margin-left: 5px;
 }
 
 a {
@@ -29,9 +58,10 @@ a {
     color: #000000;
 }
 
-header {
+header .gambar {
     background-color: blueviolet;
-    height: 90px;
+    padding: 100px;
+    width: 20px;
 }
 
 header h1, h2 {
@@ -48,13 +78,9 @@ header h1::first-letter, h2::first-letter{
 #container {
     width: 700px;
     margin: 0 auto;
+    position: relative;
 }
 
-#content p {
-    margin-top: 10px;
-    line-height: 1.5;
-    text-align: justify;
-}
 
 .side-content1 {
 	margin-top: 10px;
@@ -112,14 +138,18 @@ header h1::first-letter, h2::first-letter{
 	text-align: center;
 }
 
-#footer {
-    background: #6b6716;
-    clear: left;
-    padding: 20px;
-    margin-left: 300px;
-    margin-right: 300px;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+footer {
+    text-align: center;
+    width: 50%;
+    height: 70px;
+    line-height: 50px;
+    background: purple;
+    color: green;
+    position: absolute;
+    left: 350px;
+    bottom: 0px;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
 }
 
 #footer p {
@@ -136,5 +166,9 @@ header h1::first-letter, h2::first-letter{
 }
 
 #content {
-    margin: 0 150px;
+    margin: 0 150px;    
+    box-shadow: -1px -0px 5px;
+    height: 400px;
+    width: 500px;
+    right: 0px;
 }
