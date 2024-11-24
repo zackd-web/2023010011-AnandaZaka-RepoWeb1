@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="" alt="one piece" alt="One Piece Header">
+        <h1>Welcome to One Piece Fan Site</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profil.html">Profile</a>
+        <a href="content.html">Strawhat Crew</a>
+        <a href="one piece world.html">One Piece World</a>
+       <a href="#" onclick="openForm()">Login/Register</a>
+    </nav>
+
+    <!-- Pop-up Login Form -->
+    <div id="popupForm" class="login-popup">
+        <div class="form-container">
+            <span class="close-btn" onclick="closeForm()">&times;</span>
+            
+            <!-- Tabs for Login and Registration -->
+            <div class="tabs">
+                <button onclick="showLogin()" id="loginTab" class="active-tab">Login</button>
+                <button onclick="showRegister()" id="registerTab">Register</button>
+            </div>
+            
+            <!-- Login Form -->
+            <div id="loginForm">
+                <h2>Login</h2>
+                <form action="login.php" method="post">
+                    <label for="login-username">Username:</label>
+                    <input type="text" id="login-username" name="username" required>
+                    
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" required>
+                    
+                    <button type="submit">Login</button>
+                </form>      
+            </div>
+            
+            <!-- Registration Form -->
+            <div id="registerForm" style="display: none;">
+                <h2>Register</h2>
+                <form action="register.php" method="post">
+                    <label for="register-username">Username:</label>
+                    <input type="text" id="register-username" name="username" required>
+                    
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" name="email" required>
+                    
+                    <label for="register-password">Password:</label>
+                    <input type="password" id="register-password" name="password" required>
+                    
+                    <label for="register-confirm-password">Confirm Password:</label>
+                    <input type="password" id="register-confirm-password" name="confirm-password" required>
+                    
+                    <button type="submit">Register</button>
+                </form>      
+            </div>
+        </div>
+    </div>
+
+    <script type="js/script.js"></script>
+</body>
+</html>
