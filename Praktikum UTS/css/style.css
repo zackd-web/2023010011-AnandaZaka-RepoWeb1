@@ -193,13 +193,12 @@ nav a:hover {
 
 .informations h2 {
     border-bottom: 6px solid #0061ff;
-    border-top: 6px solid #0061ff;
 }
 
 .informations h2 {
     padding: 20px;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-family: monospace;
 }
 
