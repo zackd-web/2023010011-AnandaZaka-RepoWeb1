@@ -1,64 +1,99 @@
-/* Modal container */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-}
+/*Halaman Log in */
 
-/* Modal content */
-.modal-content {
-    background-color: white;
-    margin: 15% auto;
-    padding: 20px;
-    border-radius: 10px;
-    width: 50%;
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     text-align: center;
 }
 
-/* Close button */
-.modal-content .close {
+/* Tombol Login */
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Pop-up Overlay */
+.popup {
+    display: none; /* Tersembunyi secara default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pop-up Aktif */
+.popup:target {
+    display: flex; /* Tampilkan pop-up saat ditargetkan */
+}
+
+
+/* Konten Pop-up */
+.popup-content {
+    background-color: white;
+    padding: 50px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+/* Tombol Close */
+.close-btn {
     position: absolute;
     top: 10px;
-    right: 20px;
-    font-size: 30px;
-    cursor: pointer;
+    right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
 }
 
-/* Form styles */
-form {
-    margin: 15px 0;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-form input {
-    width: 80%;
-    padding: 8px;
-    margin-bottom: 10px;
+/* Input dan Tombol */
+.popup-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-form button {
-    padding: 10px 20px;
-    background-color: #3b82f6;
+.popup-content button {
+    background-color: #333;
     color: white;
     border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
     border-radius: 5px;
+}
+
+.popup-content button:hover {
+    background-color: #555;
+}
+
+/* Teks Link */
+.popup-content p a {
+    color: #333;
+    text-decoration: underline;
     cursor: pointer;
 }
-
-form button:hover {
-    background-color: #2563eb;
-}
-

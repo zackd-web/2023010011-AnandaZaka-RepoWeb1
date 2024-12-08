@@ -1,0 +1,14 @@
+
+
+.index-kotak-title {
+	border: 5px double grey;
+	font-size: 30px;
+	font-family: monospace;
+	display: flex;
+	gap: 5px;
+	justify-content: space-evenly;
+}
+
+.index-kotak {
+	
+}
