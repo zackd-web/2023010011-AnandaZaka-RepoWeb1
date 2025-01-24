@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login dan Registrasi</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <!-- Pop-up Login -->
+    <div id="popup-login" class="popup">
+        <div class="popup-content">
+            <a href="#" class="close-btn">&times;</a>
+            <h2>Login</h2>
+            <form>
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" placeholder="Masukkan Username" required>
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Masukkan Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Belum punya akun? <a href="#popup-register">Registrasi di sini</a></p>
+        </div>
+    </div>
+
+    <!-- Pop-up Registrasi -->
+    <div id="popup-register" class="popup">
+        <div class="popup-content">
+            <a href="#" class="close-btn">&times;</a>
+            <h2>Registrasi</h2>
+            <form>
+                <label for="register-username">Username</label>
+                <input type="text" id="register-username" placeholder="Buat Username" required>
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" placeholder="Masukkan Email" required>
+                <label for="register-password">Password</label>
+                <input type="password" id="register-password" placeholder="Buat Password" required>
+                <button type="submit">Register</button>
+            </form>
+            <p>Sudah punya akun? <a href="#popup-login">Login di sini</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <img src="https://www.polibang.ac.id/wp-content/uploads/2019/03/Logo_Politbang_png-259x300.png" alt="Logo Polibang">
+        <p>&copy; 2024 | NIM: 2023010011 | Nama: Ananda Zaka</p>
+    </footer>
+</body>
+</html>
