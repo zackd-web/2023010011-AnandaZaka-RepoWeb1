@@ -87,7 +87,7 @@ if(!isset($_SESSION['customer_email'])){
 
             <li class="categories__item">
               <a class="categories__link" href="localstore.php">
-                Local Stores
+                About Us
               </a>
             </li>
 

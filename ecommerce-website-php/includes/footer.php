@@ -73,8 +73,8 @@
 			<div class="footer-nav__col footer-nav__col--contacts">
 				<div class="footer-nav__heading">Contact details</div>
 				<address class="address">
-				Head Office: Avenue Fashion.<br>
-				180-182 Regent Street, London.
+				Jl. Raya Margoyoso, RT.01/RW.02<br>
+				Margoyoso II, Margoyoso, Kec. Kalinyamatan, Kabupaten Jepara, Jawa Tengah 59462
 			</address>
 				<div class="phone">
 					Telephone:
@@ -82,7 +82,7 @@
 				</div>
 				<div class="email">
 					Email:
-					<a href="mailto:support@yourwebsite.com" class="email__addr">support@yourwebsite.com</a>
+					<a href="mailto:support@yourwebsite.com" class="email__addr">smsshop@gmail.com</a>
 				</div>
 			</div>
 
@@ -114,7 +114,7 @@
 		</div>
 	</div> -->
 
-	<div class="page-footer__subline">
+	<!-- <div class="page-footer__subline">
 		<div class="container clearfix">
 
 			<div class="copyright">
@@ -130,4 +130,4 @@
 			</div>
 		</div>
 	</div>
-</footer>
+</footer> -->

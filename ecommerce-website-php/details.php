@@ -159,10 +159,9 @@ if ($check_product == 0) {
                                         <label class="col-md-5 control-label">Product Size</label>
                                         <div class="col-md-7">
                                             <select name="product_size" class="form-control">
-                                                <option>Select a Size</option>
-                                                <option>Small</option>
-                                                <option>Medium</option>
-                                                <option>Large</option>
+                                                <option>Select a Color</option>
+                                                <option>Black</option>
+                                                <option>White</option>
                                             </select>
                                         </div>
                                     </div>
@@ -185,10 +184,9 @@ if ($check_product == 0) {
                                         <label class="col-md-5 control-label">Bundle Size</label>
                                         <div class="col-md-7">
                                             <select name="product_size" class="form-control">
-                                                <option>Select a Size</option>
-                                                <option>Small</option>
-                                                <option>Medium</option>
-                                                <option>Large</option>
+                                                <option>Select a Color</option>
+                                                <option>Black</option>
+                                                <option>White</option>
                                             </select>
                                         </div>
                                     </div>

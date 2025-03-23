@@ -5,9 +5,13 @@
 
 
 <div class="container">
-    <h1 class="text-center">Data Pelanggan</h1>
-    <a href="create.php" class='btn btn-outline-dark mb-2'>
-        <i class="bi bi-person-plus"></i> Create New User
+    <h1 class="text-center">Customers Data</h1>
+    <a href="export-excel.php" class='btn btn-outline-dark mb-2'>
+        <i class="bi bi-person-plus"></i> Export to Excel
+    </a>
+    
+    <a href="export-pdf.php" class='btn btn-outline-dark mb-2'>
+        <i class="bi bi-person-plus"></i> Export to PDF
     </a>
     <table class="table table-striped table-bordered table-hover">
         <thead class="table-dark">
@@ -18,7 +22,6 @@
                 <th scope="col">Password</th>
                 <th scope="col">Country</th>
                 <th scope="col">City</th>
-                <th scope="col" colspan="3" class="text-center">CRUD Operations</th>
             </tr>
         </thead>
         <tbody>
@@ -41,10 +44,36 @@
                 echo " <td>{$pass}</td>";
                 echo " <td>{$country}</td>";
                 echo " <td>{$city}</td>";
-                echo " <td class='text-center'> <a href='read.php?user_id={$id}' class='btn btn-primary'> <i class='bi bi-eye'></i> View</a> </td>";
-                echo " <td class='text-center'> <a href='update.php?edit&user_id={$id}' class='btn btn-secondary'><i class='bi bi-pencil'></i> EDIT</a> </td>";
-                echo " <td class='text-center'> <a href='delete.php?delete={$id}' class='btn btn-danger'> <i class='bi bi-trash'></i> DELETE</a> </td>";
-                echo " </tr>";
+            }
+            ?>
+        </tbody>
+    </table>
+</div>
+
+<div class="container">
+    <h1 class="text-center">Product Data</h1>
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">Product ID</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Product Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            $query = "SELECT * FROM products"; // SQL query to fetch all table data
+            $view_users = mysqli_query($con, $query); // sending the query to the database
+            
+            // displaying all the data retrieved from the database using while loop
+            while ($row = mysqli_fetch_assoc($view_users)) {
+                $id = $row['product_id'];
+                $name = $row['product_title'];
+                $price = $row['product_price'];
+                echo "<tr>";
+                echo " <th scope='row'>{$id}</th>";
+                echo " <td>{$name}</td>";
+                echo " <td>{$price}</td>";
             }
             ?>
         </tbody>

@@ -37,7 +37,7 @@ if(isset($_REQUEST['cat']) && is_array($_REQUEST['cat'])){
 <div class="panel panel-default sidebar-menu"><!-- panel panel-default sidebar-menu Starts -->
     <div class="panel-heading"><!-- panel-heading Starts -->
         <h3 class="panel-title"><!-- panel-title Starts -->
-            Manufacturers
+            Products
             <div class="pull-right"><!-- pull-right Starts -->
                 <a href="#" style="color:black;">
                     <span class="nav-toggle hide-show">Hide</span>
